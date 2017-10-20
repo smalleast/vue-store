@@ -1,12 +1,3 @@
-;(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define([], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  } else {
-    root.vs.Store = factory();
-  }
-}(this, function() {
 /**
  * Created by dcpai on 2017/7/4.
  */
@@ -75,6 +66,3 @@
   };
   module.exports = Store;
 }());
-
-return Store;
-}));
