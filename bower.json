@@ -1,7 +1,7 @@
 {
-  "name": "next-store",
+  "name": "vue-store",
   "description": "A Storage toolkit for mobile based on nextjs.",
-  "main": "dist/next-store.js",
+  "main": "dist/vue-store.js",
   "authors": [
     "afei"
   ],
@@ -9,7 +9,7 @@
   "keywords": [
     "next"
   ],
-  "homepage": "https://github.com/afeiship/next-store",
+  "homepage": "https://github.com/afeiship/vue-store",
   "moduleType": [
     "amd"
   ],

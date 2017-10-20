@@ -10,7 +10,7 @@
   });
 
   gulp.task('build', ['clean'], function() {
-    return gulp.src('src/next-store.js')
+    return gulp.src('src/vue-store.js')
       .pipe(gulp.dest('dist'));
   });
 

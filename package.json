@@ -1,16 +1,16 @@
 {
-  "name": "next-store",
+  "name": "vue-store",
   "version": "0.0.0",
   "description": "A Storage toolkit for mobile based on nextjs.",
-  "homepage": "https://github.com/afeiship/next-store",
+  "homepage": "https://github.com/smalleast/vue-store",
   "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
+    "name": "smalleast",
+    "email": "382026180@qq.com"
   },
   "scripts": {
     "build": "gulp build"
   },
-  "main": "dist/next-store.js",
+  "main": "dist/vue-store.js",
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.1",
@@ -23,8 +23,7 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2",
-    "next-local-storage": "github:afeiship/next-local-storage",
-    "next-session-storage": "github:afeiship/next-session-storage"
+    "next-js-core2": "github:smalleast/next-js-core2",
+    "node-sass": "^4.5.3"
   }
 }

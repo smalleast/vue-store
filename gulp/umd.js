@@ -10,7 +10,7 @@
   });
 
   gulp.task('umd', function() {
-  return gulp.src('src/next-store.js')
+  return gulp.src('src/vue-store.js')
       .pipe($.umd({
         exports:function(){
           return 'Store';
