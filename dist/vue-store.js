@@ -1,12 +1,12 @@
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['nx'], factory);
+    define([], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('next-js-core2'));
+    module.exports = factory();
   } else {
-    root.nx.Store = factory(root.nx);
+    root.vs.Store = factory();
   }
-}(this, function(nx) {
+}(this, function() {
 /**
  * Created by dcpai on 2017/7/4.
  */

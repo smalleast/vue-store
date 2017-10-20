@@ -23,7 +23,6 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "next-js-core2": "github:smalleast/next-js-core2",
     "node-sass": "^4.5.3"
   }
 }

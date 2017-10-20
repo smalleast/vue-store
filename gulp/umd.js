@@ -16,16 +16,11 @@
           return 'Store';
         },
         namespace: function(file) {
-          return 'nx.Store';
+          return 'vs.Store';
         },
         dependencies: function(file) {
           return [
-            {
-              name: 'nx',
-              amd: '',
-              cjs: 'next-js-core2',
-              global: 'nx'
-            }
+
           ];
         }
       }))
