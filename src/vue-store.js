@@ -28,7 +28,8 @@
     },
     get: function (inKey) {
       var value = global[Store.engine].getItem(inKey);
-      return value;
+      var inValue = !!value ? JSON.parse(value) : value;
+      return inValue;
     },
     sets: function (inObject) {
       for (var inKey in inObject) {
@@ -55,11 +56,11 @@
       global[Store.engine].removeItem(inKey);
     },
     clearAll: function (inArray) {
-      if(Array.isArray(inArray)){
-        inArray.forEach(function(item){
+      if (Array.isArray(inArray)) {
+        inArray.forEach(function (item) {
           Store.clear(item);
         })
-      }else{
+      } else {
         global[Store.engine].clear();
       }
     }
