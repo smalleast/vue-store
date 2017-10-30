@@ -24,12 +24,10 @@
       return this.gets();
     },
     set: function (inKey, inValue) {
-      global[Store.engine].setItem(inKey, JSON.stringify(inValue));
+      global[Store.engine].setItem(inKey, inValue);
     },
     get: function (inKey) {
-      var value = global[Store.engine].getItem(inKey);
-      var inValue = !!value ? JSON.parse(value) : value;
-      return inValue;
+      return  global[Store.engine].getItem(inKey);
     },
     sets: function (inObject) {
       for (var inKey in inObject) {
