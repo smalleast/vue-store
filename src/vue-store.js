@@ -5,6 +5,7 @@
   var global = window || this;
   var ENGIE_LOCAL = 'localStorage';
   var ENGIE_SESSION = 'sessionStorage';
+  var nx = global.nx || require('next-js-core2');
   var Store = {
     engine: ENGIE_LOCAL,
     set local(str) {
@@ -24,10 +25,11 @@
       return this.gets();
     },
     set: function (inKey, inValue) {
-      global[Store.engine].setItem(inKey, inValue);
+      global[Store.engine].setItem(inKey, nx.stringify(inValue));
     },
     get: function (inKey) {
-      return  global[Store.engine].getItem(inKey);
+      var _value = global[Store.engine].getItem(inKey);
+      return nx.parse(_value);
     },
     sets: function (inObject) {
       for (var inKey in inObject) {
